@@ -20,6 +20,8 @@ Transformando problemas reais da operação em software sob medida
 
 Desenvolvedor full stack formado em **Análise e Desenvolvimento de Sistemas (ADS)**. Construo software que precisa funcionar de verdade — do modelo de dados à interface, passando pela infraestrutura.
 
+Sou bombeiro de aeródromo (SESCINC) e crio sistemas para a minha própria operação. Esse é o meu diferencial: conheço de perto o problema antes de escrever a primeira linha de código.
+
 Trabalho principalmente com **TypeScript** e **Supabase** na web e com **Java** no backend, sempre buscando soluções enxutas e fáceis de manter. Ferramentas de IA como **OpenCode, Cursor e ChatGPT** fazem parte do meu fluxo diário de desenvolvimento — é assim que vou de ideia a produto em produção mais rápido.
 
 ---
@@ -36,35 +38,39 @@ Trabalho principalmente com **TypeScript** e **Supabase** na web e com **Java** 
 
 ## Projetos
 
-> Produtos em produção — usados por clientes reais e na própria operação.
+> Projetos em produção — em uso diário na operação e por [PREENCHER: nº de clientes/empresas].
 
 ### Indicadores MedMais
+<img src="assets/medmais.png" width="600" alt="Tela do projeto">
 *Indicadores operacionais de várias bases, com segurança por perfil.*
 
-Plataforma de gestão de indicadores operacionais usada pela **MedMais**, empresa multinacional de grande porte. As equipes lançam e conferem indicadores por base, acompanham painéis analíticos, gerenciam usuários e colaboradores e exportam relatórios. Cada unidade enxerga apenas os próprios dados graças ao isolamento por linha (*Row Level Security*) no PostgreSQL, e o acesso é controlado por perfil.
+Plataforma de gestão de indicadores operacionais usada pela **MedMais** em [PREENCHER: nº de bases] bases, por [PREENCHER: nº de usuários] usuários. As equipes lançam e conferem indicadores por base, acompanham painéis analíticos, gerenciam usuários e colaboradores e exportam relatórios. Cada unidade enxerga apenas os próprios dados graças ao isolamento por linha (*Row Level Security*) no PostgreSQL, e o acesso é controlado por perfil.
 
-`React` · `TypeScript` · `Supabase` · `Vite` · `Recharts`
+`React` · `TypeScript` · `Supabase` · `Vite` · `Recharts` · [demo](https://indicadores-medmais.vercel.app)
 
 ### New Jiu Jitsu
+<img src="assets/jiujitsu.png" width="600" alt="Tela do projeto">
 *O sistema completo de uma academia de jiu-jitsu.*
 
 Do cadastro de alunos e famílias ao financeiro. Grade de aulas e calendário, presença com check-in manual e por QR code, controle de faixas e graduações e planos de mensalidade — tudo sobre uma base multiacademia. Backend em **Java 21 + Spring Boot** com autenticação por JWT e refresh token rotativo; frontend em **React**.
 
-`Java 21` · `Spring Boot` · `PostgreSQL` · `React` · `Docker` · [código](https://github.com/NiltonFilhoprofessionalDEV/New-Jiujitsu)
+`Java 21` · `Spring Boot` · `PostgreSQL` · `React` · `Docker` · [código](https://github.com/NiltonFilhoprofessionalDEV/New-Jiujitsu) · demo (acesso sob solicitação)
 
 ### FireCheck
+<img src="assets/firecheck.png" width="600" alt="Tela do projeto">
 *Inspeção de extintores, do escritório ao campo.*
 
 Sistema de gestão e inspeção de extintores usado por equipes de campo: importação de planilhas (Excel/CSV), mapeamento dos equipamentos sobre a planta do local e conferência direto do celular (PWA). Traz níveis de acesso corporativo, base, liderança e operacional — além de um perfil cliente somente-leitura — com os dados de cada base isolados.
 
-`Next.js` · `TypeScript` · `Supabase` · `PWA`
+`Next.js` · `TypeScript` · `Supabase` · `PWA` · [demo](https://extintores-checklist.vercel.app)
 
 ### Venda Fácil
+<img src="assets/vendafacil.png" width="600" alt="Tela do projeto">
 *Vendas, entregas e rotas na palma da mão.*
 
 App web mobile-first que registra vendas com produtos e clientes, organiza as entregas do dia e otimiza automaticamente a rota (via OSRM) para reduzir o deslocamento. Roda direto do navegador do celular como PWA.
 
-`React` · `TypeScript` · `Supabase` · `PWA`
+`React` · `TypeScript` · `Supabase` · `PWA` · [demo](https://appvendafacil-umber.vercel.app)
 
 ### Backup Supabase
 *Backups automáticos que se provam restauráveis.*
@@ -84,4 +90,5 @@ Um segundo workflow — um teste de restauração semanal — baixa o `latest.zi
 Fico à disposição para conversar sobre projetos, oportunidades e ideias.
 
 - **GitHub:** [NiltonFilhoprofessionalDEV](https://github.com/NiltonFilhoprofessionalDEV)
-- **E-mail:** nilton.souza.dev@gmail.com
+- **LinkedIn:** [nilton-souza](https://www.linkedin.com/in/nilton-souza-5a75861b3/)
+- **E-mail:** cabralsussa@gmail.com
