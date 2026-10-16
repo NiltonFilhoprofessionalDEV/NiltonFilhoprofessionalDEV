@@ -1,4 +1,4 @@
-# Nilton Cabral
+# Nilton Souza
 
 Desenvolvedor full stack formado em **Análise e Desenvolvimento de Sistemas (ADS)**. Construo aplicações web com **TypeScript + Supabase** e APIs em **Java**, com foco em resolver problemas reais da operação. Uso ferramentas de IA — **OpenCode, Cursor e ChatGPT** — como parte do meu fluxo de desenvolvimento.
 
