@@ -84,4 +84,4 @@ Um segundo workflow — um teste de restauração semanal — baixa o `latest.zi
 Fico à disposição para conversar sobre projetos, oportunidades e ideias.
 
 - **GitHub:** [NiltonFilhoprofessionalDEV](https://github.com/NiltonFilhoprofessionalDEV)
-- **E-mail:** cabralsussa@gmail.com
+- **E-mail:** nilton.souza.dev@gmail.com
