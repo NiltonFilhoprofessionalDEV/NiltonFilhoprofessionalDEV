@@ -13,7 +13,7 @@ Também trabalho com Spring Boot, PostgreSQL, Tailwind CSS e Docker.
 
 ## Projetos
 
-Produtos em produção, em uso por clientes reais.
+Projetos em produção — em uso por clientes reais e na operação.
 
 ### Indicadores MedMais
 
@@ -38,6 +38,14 @@ Sistema de gestão e inspeção de extintores usado por equipes de campo. Faz im
 App web mobile-first para registrar vendas com produtos e clientes, organizar as entregas do dia e otimizar automaticamente a rota (via OSRM), reduzindo o deslocamento. Roda direto do navegador do celular como PWA.
 
 `React` · `TypeScript` · `Supabase` · `PWA`
+
+### Backup Supabase
+
+Rotina de backup automático do banco de dados do Supabase que roda inteiramente no **GitHub Actions**, sem servidor próprio para manter. Todos os dias — e também sob demanda — o workflow conecta no PostgreSQL do projeto, gera o dump dos schemas `public` e `auth` em três formatos (o `database.dump` em formato custom, pronto para restauração, além de `schema.sql` e `data.sql` em texto), valida o arquivo com `pg_restore --list` e compacta tudo em um `.zip`. O pacote vai para o Google Drive via `rclone`, organizado por ano/mês, com um `latest.zip` apontando sempre para o backup mais recente; arquivos com mais de 30 dias são apagados automaticamente.
+
+Um segundo workflow — um teste de restauração semanal — baixa o `latest.zip`, sobe um PostgreSQL 17 temporário, recria as roles, schemas e extensões padrão do Supabase (`anon`, `authenticated`, `service_role`, `uuid-ossp`, `pgcrypto`) e restaura o dump com `--exit-on-error`, conferindo que os schemas e as tabelas voltaram. Ou seja, o backup não é só gerado: é provado restaurável de tempos em tempos. Sucesso e falha disparam notificação no Telegram com tamanho, duração e link da execução, e o log fica salvo como artefato.
+
+`GitHub Actions` · `Bash` · `PostgreSQL` · `pg_dump` · `rclone` · `Docker`
 
 > Os projetos de uso interno têm repositórios privados — acesso sob autorização.
 
